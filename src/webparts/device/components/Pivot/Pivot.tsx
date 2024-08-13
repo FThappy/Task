@@ -1,10 +1,12 @@
 import * as React from 'react';
 import styles from './Pivot.module.scss';
+import { UserProps } from '../dto/UserProps';
 
 
 type Props = {
    tabName : string;
    setTabName : React.Dispatch<React.SetStateAction<string>>;
+   user? : UserProps;
 }
 
 const Pivot = (props: Props) => {
